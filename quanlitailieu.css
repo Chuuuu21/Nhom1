@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #6b6ca7;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #6b6ca7;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-upload {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.search-upload input {
+  flex: 1;
+  padding: 8px;
+}
+
+.search-upload button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #6b6ca7;
+}
+
+.upload-btn {
+  background-color: #007bff;
+  color: black;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+table thead {
+  background-color: #6b6ca7,
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.action-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end; 
+}
+
+.delete-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.download-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.user {
+  font-weight: bold;
+}
