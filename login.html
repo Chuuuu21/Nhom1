@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to top, #ace9fc, #3f5f95);
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 30px;
+    }
+
+    .left img {
+      height: 500px;
+      border-radius: 25px;
+    }
+
+    .right {
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px 40px;
+      width: 320px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .right h2 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px 35px 10px 10px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      background: transparent;
+      font-size: 14px;
+    }
+
+    .form-group img {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 20px;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      background-color: #347af6;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .bottom-links a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .bottom-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <img src="https://m.media-amazon.com/images/I/418-AHn37NL.jpg" alt="Book Cover">
+  </div>
+  <div class="right">
+    <h2>Login</h2>
+    <div class="form-group">
+      <input type="text" placeholder="User name">
+      <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="edit icon">
+    </div>
+    <div class="form-group">
+      <input type="password" placeholder="Password">
+      <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="lock icon">
+    </div>
+    <div class="form-group">
+      <input type="text" placeholder="Email or phone">
+      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="email icon">
+    </div>
+    <button class="login-btn">Login</button>
+    <div class="bottom-links">
+      <span>Create an account</span>
+      <a href="#">Forget password?</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

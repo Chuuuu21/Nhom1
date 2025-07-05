@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign up</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to top, #aacbf1, #3f5f95);
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .left {
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px 40px;
+      width: 320px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .left h2 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px 35px 10px 10px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      background: transparent;
+      font-size: 14px;
+    }
+
+    .form-group img {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 20px;
+    }
+
+    .form-group .show-password {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 12px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .signup-btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      background-color: #347af6;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .bottom-link {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .bottom-link a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .bottom-link a:hover {
+      text-decoration: underline;
+    }
+
+    .right img {
+      height: 500px;
+      border-radius: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <h2>Sign up</h2>
+
+    <div class="form-group">
+      <input type="text" placeholder="User name">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="user icon">
+    </div>
+
+    <div class="form-group">
+      <input type="password" placeholder="Password" id="password">
+      <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="lock icon">
+    </div>
+
+    <div class="form-group">
+      <input type="text" placeholder="Email or phone">
+      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="email icon">
+    </div>
+
+    <div class="form-group">
+      <input type="password" placeholder="Confirm password" id="confirmPassword">
+      <span class="show-password" onclick="togglePassword()">Show</span>
+    </div>
+
+    <button class="signup-btn">Sign up</button>
+
+    <div class="bottom-link">
+      <a href="#">Already have an account?</a>
+    </div>
+  </div>
+
+  <div class="right">
+    <img src="https://m.media-amazon.com/images/I/418-AHn37NL.jpg" alt="Book Cover">
+  </div>
+</div>
+
+<script>
+  function togglePassword() {
+    const input = document.getElementById("confirmPassword");
+    input.type = input.type === "password" ? "text" : "password";
+  }
+</script>
+
+</body>
+</html>
