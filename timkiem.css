@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #cbd5e0, #f3f3f3);
+}
+
+.navbar {
+    background-color: #eee;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 25px;
+    }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+.container {
+    background-color: white;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.search-icon {
+    font-size: 18px;
+    color: #666;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box select {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+}
+
+.search-box button {
+    background-color: #29a3d2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+    .search-box button:hover {
+        background-color: #0077aa;
+    }
+
+.result {
+    background-color: #eee;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .result h4 {
+        margin: 0;
+    }
+
+    .result p {
+        margin: 2px 0 0;
+        font-size: 13px;
+        color: gray;
+    }
+
+.no-result {
+    border: 1px solid #999;
+    padding: 14px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+    margin-bottom: 15px;
+}
+
+    .no-result strong {
+        display: block;
+        margin-bottom: 6px;
+    }
+
+.notification {
+    font-size: 11px;
+    color: #777;
+    text-align: center;
+    margin-top: 20px;
+}
