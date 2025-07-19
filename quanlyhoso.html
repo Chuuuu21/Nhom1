@@ -1,123 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>User Profile</title>
+  <title>Hồ sơ người dùng</title>
   <script src="quanlyhoso.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
     body {
-      background: url('https://travel24h.com.vn/wp-content/uploads/2024/08/SD8fzdxpj6irbin_n3Gm4DfkOMh9eXQuL3iHM40xoGEPD15fAi2ASVk1azqAPhZ2DM0au3SLrc1A.jpg') no-repeat center center/cover;
-      height: 100vh;
-      background-attachment: fixed;
-    }
+  background: url('https://travel24h.com.vn/wp-content/uploads/2024/08/SD8fzdxpj6irbin_n3Gm4DfkOMh9eXQuL3iHM40xoGEPD15fAi2ASVk1azqAPhZ2DM0au3SLrc1A.jpg') no-repeat center center/cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
 
-    header {
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 2px solid #ddd;
-    }
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+}
 
-    .nav-left, .nav-right {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-    .nav-left a, .nav-right a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
+.nav-left a, .nav-right a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
 
-    .nav-left a:hover, .nav-right a:hover {
-      color: #0056b3;
-    }
+.nav-left a:hover, .nav-right a:hover {
+  color: #0056b3;
+}
 
-    .search-bar {
-      padding: 6px 10px;
-      border-radius: 20px;
-      border: 1px solid #ccc;
-      outline: none;
-    }
+.search-bar {
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
 
-    .profile-box {
-      background-color: white;
-      width: 600px;
-      margin: 50px auto;
-      padding: 25px 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      position: relative;
-    }
+.profile-box {
+  background-color: white;
+  width: 600px;
+  margin: 50px auto;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+}
 
-    .profile-header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 25px;
-    }
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
 
-    .profile-header img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-    }
+.profile-header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
 
-    .profile-header h2 {
-      font-size: 20px;
-      font-weight: 600;
-    }
+.profile-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
 
-    .email-text {
-      font-size: 14px;
-      color: #666;
-    }
+.email-text {
+  font-size: 14px;
+  color: #666;
+}
 
-    .info-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
-    .info-table td {
-      padding: 8px 5px;
-      vertical-align: top;
-    }
+.info-table td {
+  padding: 8px 5px;
+  vertical-align: top;
+}
 
-    .info-table td:first-child {
-      font-weight: 600;
-      width: 140px;
-      color: #333;
-    }
+.info-table td:first-child {
+  font-weight: 600;
+  width: 140px;
+  color: #333;
+}
 
-    .action-icons {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      display: flex;
-      gap: 15px;
-    }
+.action-icons {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+}
 
-    .action-icons img {
-      width: 20px;
-      height: 20px;
-      cursor: pointer;
-      opacity: 0.8;
-    }
+.action-icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+}
 
-    .action-icons img:hover {
-      opacity: 1;
-    }
+.action-icons img:hover {
+  opacity: 1;
+}
   </style>
 </head>
 <body>
@@ -125,29 +118,29 @@
 <header>
   <div class="nav-left">
     <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Logo" width="35">
-    <a href="#">Home</a>
-    <a href="#">Connect!</a>
-    <a href="#">For Therapist</a>
-    <a href="#">Psychology Forum</a>
+    <a href="#">Trang chủ</a>
+    <a href="#">Kết nối!</a>
+    <a href="#">Dành cho chuyên gia</a>
+    <a href="#">Diễn đàn tâm lý</a>
   </div>
   <div class="nav-right">
-    <input type="text" class="search-bar" placeholder="Search...">
-    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="User" width="35">
+    <input type="text" class="search-bar" placeholder="Tìm kiếm...">
+    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Người dùng" width="35">
     <a href="#">Leo</a>
-    <img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" alt="Help" width="24">
-    <img src="https://cdn-icons-png.flaticon.com/512/1827/1827276.png" alt="Notifications" width="24">
+    <img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" alt="Trợ giúp" width="24">
+    <img src="https://cdn-icons-png.flaticon.com/512/1827/1827276.png" alt="Thông báo" width="24">
     <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Menu" width="24">
   </div>
 </header>
 
 <div class="profile-box">
   <div class="action-icons">
-    <img src="https://cdn-icons-png.flaticon.com/512/84/84380.png" alt="Edit">
-    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="Save">
-    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="Close">
+    <img src="https://cdn-icons-png.flaticon.com/512/84/84380.png" alt="Chỉnh sửa">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="Lưu">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="Đóng">
   </div>
   <div class="profile-header">
-    <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="Avatar">
+    <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="Ảnh đại diện">
     <div>
       <h2>Leo</h2>
       <div class="email-text">nguyenleoLeo2004@gmail.com</div>
@@ -156,31 +149,31 @@
 
   <table class="info-table">
     <tr>
-      <td>Name</td>
-      <td>Leo Nguyen</td>
+      <td>Họ và tên</td>
+      <td>Leo Nguyễn</td>
     </tr>
     <tr>
-      <td>Date of Birth</td>
+      <td>Ngày sinh</td>
       <td>20/03/2004</td>
     </tr>
     <tr>
-      <td>Address</td>
-      <td>Quang Nam, Viet Nam</td>
+      <td>Địa chỉ</td>
+      <td>Quảng Nam, Việt Nam</td>
     </tr>
     <tr>
-      <td>Sex</td>
-      <td>Male</td>
+      <td>Giới tính</td>
+      <td>Nam</td>
     </tr>
     <tr>
       <td>Email</td>
       <td>nguyenleoLeo2004@gmail.com</td>
     </tr>
     <tr>
-      <td>Number</td>
+      <td>Số điện thoại</td>
       <td>012345678</td>
     </tr>
     <tr>
-      <td>Occupation</td>
+      <td>Nghề nghiệp</td>
       <td>Streamer</td>
     </tr>
   </table>
